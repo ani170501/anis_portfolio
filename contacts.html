@@ -11,79 +11,13 @@
 <body>
     <center>
         <h1>Contacts</h1>
-<div class="background">
-  <div class="container">
-    <div class="screen">
-      <div class="screen-header">
-        <div class="screen-header-left">
-          <div class="screen-header-button close"></div>
-          <div class="screen-header-button maximize"></div>
-          <div class="screen-header-button minimize"></div>
-        </div>
-        <div class="screen-header-right">
-          <div class="screen-header-ellipsis"></div>
-          <div class="screen-header-ellipsis"></div>
-          <div class="screen-header-ellipsis"></div>
-        </div>
-      </div>
-      <div class="screen-body">
-        <div class="screen-body-item left">
-          <div class="app-title">
-            <span>Send me mail</span>
-        <div class="screen-body-item">
-          <div class="app-form">
-            <div class="app-form-group">
-              <input class="app-form-control" placeholder="NAME">
-            </div>
-            <div class="app-form-group">
-              <input class="app-form-control" placeholder="EMAIL">
-            </div>
-            <div class="app-form-group">
-              <input class="app-form-control" placeholder="CONTACT NO">
-            </div>
-            <div class="app-form-group message">
-              <input class="app-form-control" placeholder="MESSAGE">
-            </div>
-            <div class="app-form-group buttons">
-              <button class="app-form-button">CANCEL</button>
-              <button class="app-form-button">SEND</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-</div
-    </center>
-
-<script type="text/javascript">
-    (function() {
-        emailjs.init("Ib-1g_r1SLfwO1_-C"); // Вашият Public Key
-    })();
-
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
-        event.preventDefault(); // Спира стандартното поведение на формата
-
-        // Събиране на данните от формата
-        const formData = {
-            name: document.getElementById('name').value,
-            email: document.getElementById('email').value,
-            message: document.getElementById('message').value
-        };
-
-        // Изпращане на имейл чрез EmailJS
-        emailjs.send('anna.borisova0517@gmail.', 'template_zegu63a', formData)
-            .then(function(response) {
-                console.log('SUCCESS!', response.status, response.text);
-                alert('Email sent successfully!');
-            }, function(error) {
-                console.log('FAILED...', error);
-                alert('Error sending email.');
-            });
-    });
-</script>
-
-
-</script>
 
 </body>
 </html>
+
+
+
+
+
+
+
