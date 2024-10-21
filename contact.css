@@ -2,38 +2,35 @@ body {
     background: linear-gradient(to right, #46D58E, #41E9D3, #35ADD1);
     margin: 0;
     padding: 0;
+    height: 100vh; /* Това заема цялата височина на прозореца */
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
-/* Центриране на заглавие и съдържание */
 .content {
     text-align: center;
-    margin-top: 50px; /* Поправка на стойността, трябва да е 50px, не "50xp" */
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    width: 100%; /* Заема цялата ширина */
+    max-width: 800px; /* Максимална ширина на съдържанието */
+    margin-top: 50px;
 }
 
-/* Заглавие */
 .content h1 {
     font-size: 95px;
     color: #5EAE79;
     margin-bottom: 5px;
 }
 
-/* Подзаглавие */
 .content h2 {
     font-size: 30px;
     color: #fff;
     margin-bottom: 40px;
 }
 
-/* Линкове (меню) */
 .content a {
     font-size: 23px;
     color: #5EAE93;
@@ -41,8 +38,8 @@ body {
     border: 2px solid #fff;
     padding: 15px 25px;
     border-radius: 50px;
-    transition: #000;
-    margin: 0 10px;
+    transition: background-color 0.3s ease;
+    margin: 10px; /* Промяна на разстоянието между бутоните */
 }
 
 .content a:hover {
@@ -50,7 +47,6 @@ body {
     color: #000;
 }
 
-/* Видео фон */
 .background-clip {
     position: absolute;
     right: 0;
@@ -63,23 +59,9 @@ body {
     object-fit: cover;
 }
 
-@media(min-aspect-ratio:16/9) {
-    .background-clip {
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media(max-aspect-ratio:16/9) {
-    .background-clip {
-        width: auto;
-        height: 100%;
-    }
-}
-
 @media (max-width: 768px) {
     .content a {
-        margin: 10px 0; /* Разстояние между тях */
-        font-size: 18px; /* Можем да намалим шрифта за малки екрани */
+        font-size: 18px;
+        padding: 10px 20px;
     }
 }
