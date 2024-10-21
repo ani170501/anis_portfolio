@@ -1,11 +1,12 @@
  h1 {
             color: green;
+	 text-align: center;
         }
 
         body {
             background: linear-gradient(to right,
                     #46D58E, #41E9D3, #35ADD1);
-            font-size: 12px;
+
         }
 
 }
