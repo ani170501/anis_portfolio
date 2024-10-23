@@ -55,3 +55,65 @@ iframe {
             top: 170px; /* Отстояние отгоре, за да не застъпва менюто */
             left: 0;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  margin-top: auto;
+  background-color: #333;
+  padding: 10px 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.social-icons a img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  transition: filter 0.3s ease;; /* for white icons on dark background */
+}
+
+.social-icon:hover {
+    filter: invert(100%); /* Обръща цветовете при задържане на мишката */
+}
+p{
+  color: #948C57;
+  margin-top: 4px;
+}
+
+.contact p {
+color: black;
+flex: 2;
+margin-left: 670px;
+margin-top: 150px;
+font-size: 20pt;
+color: #2F5E4E;
+}
+
+.karta iframe{
+flex: 1; /* Картата ще заема 1 част от контейнера */
+    margin-left: 20px;
+
+}
+.small p{
+  font-size: 12pt;
+  color: black;
+margin-left: 670px;
+margin-top: 20px;
+color: #2F5E4E;
+}
