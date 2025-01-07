@@ -1,0 +1,73 @@
+
+body {
+   margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; /* Цялата височина на екрана */
+   background: linear-gradient(to right, #808080, #606060, #404040)
+    
+
+}
+
+ h1 {
+font: italic small-caps bold 16px/2 cursive;
+font-size: 27px;
+color: white;
+}
+
+.content {
+    text-align: center;
+    margin-top: 20px; /* Разстояние отгоре */
+}
+
+.content a {
+    font-size: 23px;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 15px 25px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+    margin: 0 10px;
+}
+
+.content a:hover {
+    background-color: #C0C0C0;
+    color: #000;
+}
+h3{
+    color: white;
+    margin-top: 60px;
+    margin-right: 25px;
+    margin-left: 25px;
+    text-align-last: center;
+    text-indent: 40px;
+    font-family: ui-serif;
+}
+
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none; /* Премахва точките на списъка */
+    padding: 0;
+}
+
+.columns li {
+    width: 50%; /* Всяка колона заема половината ширина */
+}
+.columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Две колони с еднаква ширина */
+    list-style-type: none;
+    padding: 0;
+    gap: 20px; 
+    width: 200px;
+}
+.container {
+    display: grid;
+    grid-template-columns: auto auto; /* Две колони с автоматична ширина */
+    justify-content: start; /* Подравняване вляво */
+    gap: 10px; /* Разстояние между колоните */
+}
