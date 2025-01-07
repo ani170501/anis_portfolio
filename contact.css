@@ -2,15 +2,40 @@
 body {
   background: linear-gradient(to right, #46D58E, #41E9D3, #35ADD1);
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', Arial, sans-serif; /* Добавяме алтернативни шрифтове */
   color: #2F5E4E;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* За футъра най-долу */
 }
+
 
 header h1 {
   text-align: center;
   margin: 20px 0;
   font-size: 2.5em;
   color: #356656;
+}
+
+.content {
+    text-align: center;
+    z-index: 1; /* За да бъде над видеото */
+}
+
+.content a {
+    font-size: 23px;
+    color: #4C9900;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 15px 25px;
+    border-radius: 50px;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 10px;
+}
+
+.content a:hover {
+    background-color: #00CCCC;
+    color: #000;
 }
 
 /* Контейнери за контактите и картата */
@@ -20,12 +45,14 @@ header h1 {
   align-items: flex-start;
   margin: 20px;
   gap: 20px;
+  flex: 1; /* Това запълва свободното пространство за футър долу */
 }
 
 .contact-text {
   flex: 1;
-  font-size: 1.2em;
+  font-size: 32px;
   line-height: 1.6;
+  color: black;
 }
 
 .contact-text a {
@@ -58,10 +85,13 @@ header h1 {
 
 /* Футър */
 .footer {
-  text-align: center;
-  padding: 15px;
   background-color: #333;
   color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: auto; /* Това гарантира, че футърът остава най-долу */
+  width: 100%; /* Покрива цялата ширина */
+  border-top: 2px solid #5EAE79; /* Бордер за отделяне на футъра */
 }
 
 .social-icons a img {
