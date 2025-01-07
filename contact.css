@@ -1,119 +1,93 @@
+/* Основни стилове */
 body {
-    background: linear-gradient(to right, #46D58E, #41E9D3, #35ADD1);
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh; /* Цялата височина на екрана */
-}
-
-h1 {
-font: italic small-caps bold 16px/2 cursive;
-font-size: 27px;
-color: #356656;
-}
-
-.content {
-    text-align: center;
-    margin-top: 20px; /* Разстояние отгоре */
-}
-
-.content h1 {
-    font-size: 95px;
-    color: #5EAE79;
-    margin-bottom: 7px; /* Разстояние между заглавието и бутоните */
-}
-
-.content h2 {
-    font-size: 30px;
-    color: #fff;
-    margin-bottom: 40px;
-}
-
-.content a {
-    font-size: 23px;
-    color: #3D7A66;
-    text-decoration: none;
-    border: 2px solid #fff;
-    padding: 15px 25px;
-    border-radius: 50px;
-    transition: background-color 0.3s ease;
-    margin: 0 10px;
-}
-
-.content a:hover {
-    background-color: #5EAE79;
-    color: #000;
-}
-
-iframe {
-   margin-right: 200px; 
-    height: 400px; /* Ограничаване на височината на картата */
-    border: none;
-    position: fixed; /* Фиксиране на картата */
-            top: 170px; /* Отстояние отгоре, за да не застъпва менюто */
-            left: 0;
-}
-
-* {
+  background: linear-gradient(to right, #46D58E, #41E9D3, #35ADD1);
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: #2F5E4E;
 }
 
-html, body {
-  height: 100%;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer {
-  margin-top: auto;
-  background-color: #333;
-  padding: 10px 0;
+header h1 {
   text-align: center;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
+  margin: 20px 0;
+  font-size: 2.5em;
+  color: #356656;
+}
+
+/* Контейнери за контактите и картата */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 20px;
+  gap: 20px;
+}
+
+.contact-text {
+  flex: 1;
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.contact-text a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  color: white;
+  background-color: #5EAE79;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.contact-text a:hover {
+  background-color: #3D7A66;
+}
+
+.karta iframe {
+  flex: 1;
+  border: none;
+  border-radius: 10px;
+}
+
+/* Малка бележка */
+.small-note {
+  font-size: 0.9em;
+  margin-top: 10px;
+  color: #6B705C;
+}
+
+/* Футър */
+.footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #333;
+  color: white;
 }
 
 .social-icons a img {
   width: 30px;
-  height: 30px;
   margin: 0 10px;
-  transition: filter 0.3s ease;; /* for white icons on dark background */
+  filter: brightness(0) invert(1);
+  transition: filter 0.3s;
 }
 
-.social-icon:hover {
-    filter: invert(100%); /* Обръща цветовете при задържане на мишката */
-}
-p{
-  color: #948C57;
-  margin-top: 4px;
+.social-icons a img:hover {
+  filter: brightness(1) invert(0);
 }
 
-.contact p {
-color: black;
-flex: 2;
-margin-left: 670px;
-margin-top: 150px;
-font-size: 20pt;
-color: #2F5E4E;
-}
+/* Отзивчив дизайн */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.karta iframe{
-flex: 1; /* Картата ще заема 1 част от контейнера */
-    margin-left: 20px;
+  .karta iframe {
+    width: 100%;
+    height: 300px;
+  }
 
-}
-.small p{
-  font-size: 12pt;
-  color: black;
-margin-left: 670px;
-margin-top: 20px;
-color: #2F5E4E;
+  .contact-text {
+    text-align: center;
+  }
 }
