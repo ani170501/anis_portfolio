@@ -121,36 +121,35 @@ header h1 {
     text-align: center;
   }
 }
-/* === РЕСПОНСИВ САМО ЗА ТЕЛЕФОНИ И ТАБЛЕТИ (до 1024px) === */
 @media (max-width: 1024px) {
-  header h1 {
-    font-size: 1.8em;
-    margin: 10px 0;
+  .content h1 {
+    font-size: 28px;
   }
 
   .content a {
+    display: block;
+    margin: 10px auto;
     font-size: 18px;
     padding: 10px 20px;
-    display: block;
-    width: fit-content;
-    margin: 10px auto;
   }
 
   .contact-container {
     flex-direction: column;
     align-items: center;
+    text-align: center;
     gap: 30px;
+    margin: 30px 10px;
   }
 
   .contact-text {
-    font-size: 20px;
-    text-align: center;
+    font-size: 18px;
     padding: 0 10px;
   }
 
   .contact-text a {
     font-size: 16px;
-    padding: 8px 12px;
+    padding: 10px 15px;
+    display: inline-block;
   }
 
   .karta iframe {
@@ -159,7 +158,7 @@ header h1 {
   }
 
   .social-icons a img {
-    width: 25px;
+    width: 28px;
     margin: 5px;
   }
 
@@ -168,4 +167,24 @@ header h1 {
     padding: 10px;
   }
 }
+
+@media (max-width: 480px) {
+  .content h1 {
+    font-size: 22px;
+  }
+
+  .contact-text {
+    font-size: 16px;
+  }
+
+  .contact-text a {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .karta iframe {
+    height: 200px;
+  }
+}
+
 
