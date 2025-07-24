@@ -27,7 +27,7 @@ h3 {
   font-family: ui-serif;
 }
 
-/* Меню връзки */
+
 .content {
   text-align: center;
   margin-top: 20px;
@@ -133,7 +133,7 @@ h3 {
   right: 10px;
 }
 
-/* Продуктов лист */
+
 #products-list {
   list-style-type: none;
   padding: 0;
