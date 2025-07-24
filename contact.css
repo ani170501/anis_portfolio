@@ -1,12 +1,12 @@
-/* Основни стилове */
+
 body {
   background: linear-gradient(to right, #46D58E, #41E9D3, #35ADD1);
   margin: 0;
-  font-family: 'Poppins', Arial, sans-serif; /* Добавяме алтернативни шрифтове */
+  font-family: 'Poppins', Arial, sans-serif; 
   color: #2F5E4E;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* За футъра най-долу */
+  min-height: 100vh; 
 }
 
 
@@ -19,7 +19,7 @@ header h1 {
 
 .content {
     text-align: center;
-    z-index: 1; /* За да бъде над видеото */
+    z-index: 1; 
 }
 
 .content a {
@@ -38,14 +38,14 @@ header h1 {
     color: #000;
 }
 
-/* Контейнери за контактите и картата */
+
 .contact-container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   margin: 20px;
   gap: 20px;
-  flex: 1; /* Това запълва свободното пространство за футър долу */
+  flex: 1; 
 }
 
 .contact-text {
@@ -76,22 +76,22 @@ header h1 {
   border-radius: 10px;
 }
 
-/* Малка бележка */
+
 .small-note {
   font-size: 0.9em;
   margin-top: 10px;
   color: #6B705C;
 }
 
-/* Футър */
+
 .footer {
   background-color: #333;
   color: white;
   text-align: center;
   padding: 15px 0;
-  margin-top: auto; /* Това гарантира, че футърът остава най-долу */
-  width: 100%; /* Покрива цялата ширина */
-  border-top: 2px solid #5EAE79; /* Бордер за отделяне на футъра */
+  margin-top: auto; 
+  width: 100%; 
+  border-top: 2px solid #5EAE79; 
 }
 
 .social-icons a img {
@@ -105,7 +105,7 @@ header h1 {
   filter: brightness(1) invert(0);
 }
 
-/* Отзивчив дизайн */
+
 @media (max-width: 768px) {
   .contact-container {
     flex-direction: column;
@@ -121,3 +121,51 @@ header h1 {
     text-align: center;
   }
 }
+/* === РЕСПОНСИВ САМО ЗА ТЕЛЕФОНИ И ТАБЛЕТИ (до 1024px) === */
+@media (max-width: 1024px) {
+  header h1 {
+    font-size: 1.8em;
+    margin: 10px 0;
+  }
+
+  .content a {
+    font-size: 18px;
+    padding: 10px 20px;
+    display: block;
+    width: fit-content;
+    margin: 10px auto;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .contact-text {
+    font-size: 20px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .contact-text a {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+
+  .karta iframe {
+    width: 100%;
+    height: 250px;
+  }
+
+  .social-icons a img {
+    width: 25px;
+    margin: 5px;
+  }
+
+  .footer {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
