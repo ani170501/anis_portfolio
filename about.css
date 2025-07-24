@@ -135,7 +135,6 @@ header h1 {
   }
 }
 
-/* === МЕДИЙНИ ЗАЯВКИ ЗА РЕСПОНСИВНОСТ === */
 @media (max-width: 1024px) {
   .content h1 {
     font-size: 70px;
