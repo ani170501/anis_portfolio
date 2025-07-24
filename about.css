@@ -10,7 +10,9 @@ body {
   font-family: sans-serif;
   box-sizing: border-box;
 }
-
+h1{
+  text-align: center;
+}
 header h1 {
   text-align: center;
   margin: 20px 0;
